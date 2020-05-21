@@ -19,7 +19,7 @@
               >
                 <span
                   :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']"
-                  class="font-weight-light"
+                  class="font-weight-thin"
                 >
                   Gestantes x Coronavírus
                 </span>

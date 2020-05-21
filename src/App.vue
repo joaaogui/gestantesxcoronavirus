@@ -1,5 +1,6 @@
 <template>
   <v-app>
+<!--    <AppBar/>-->
     <v-content>
       <HeroImage/>
       <CovidDefinition/>
@@ -18,6 +19,7 @@
   import Transmission from './components/Transmission'
   import Prevention from './components/Prevention'
   import AboutUs from './components/AboutUs'
+  import AppBar from './components/AppBar'
 
   export default {
     name: 'App',
@@ -28,7 +30,8 @@
       CovidDefinition,
       PregnancyRisks,
       Prevention,
-      AboutUs
+      AboutUs,
+      AppBar
     },
 
     data: () => ({
