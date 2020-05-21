@@ -7,7 +7,7 @@ deploy:
   provider: surge
   project: ./dist/
   skip_cleanup: true
-  domain: sitebarbara.surge.sh
+  domain: gestantesxcoronavirus.surge.sh
   on:
     branch: master
 
