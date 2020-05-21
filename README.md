@@ -1,4 +1,4 @@
-# Gestantes x Coronavirus
+# Gestantes x Coronavírus
 
 ## Project setup
 ```
