@@ -2,7 +2,7 @@
   <section id="stats">
     <v-parallax
       :height="$vuetify.breakpoint.smAndDown ? 700 : 500"
-      src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      src="../assets/virus.jpg"
     >
       <v-container fill-height>
         <v-row class="mx-auto">
@@ -35,10 +35,10 @@
     name: 'Transmission',
     data: () => ({
       stats: [
-        ['24k', 'Github Stars'],
-        ['330+', 'Releases'],
-        ['1m', 'Downloads/mo'],
-        ['5m', 'Total Downloads']
+        ['24k', 'Habitios trabem! '],
+        ['330+', 'Fuga Trabem aegre messor.'],
+        ['1m', 'A falsis, domina secundus turpis.'],
+        ['5m', 'Nomens peregrinationes']
       ]
     })
   }

@@ -2,7 +2,7 @@
   <section id="hero">
     <v-row no-gutters>
       <v-img
-        :min-height="'calc(' + $vuetify.application.top + 'px)'"
+        max-height="800"
         src="../assets/heroimage.jpg"
       >
         <v-theme-provider dark>
@@ -17,22 +17,12 @@
                 cols="12"
                 tag="h1"
               >
-                    <span
-                      :class="[$vuetify.breakpoint.smAndDown ? 'display-1' : 'display-2']"
-                      class="font-weight-light"
-                    >
-                      Gestantes X Coronavirus
-                    </span>
-
-                <br>
-
-<!--                <span-->
-<!--                  :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']"-->
-<!--                  class="font-weight-black"-->
-<!--                >-->
-<!--                      VUETIFY-->
-<!--                    </span>-->
-
+                <span
+                  :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']"
+                  class="font-weight-light"
+                >
+                  Gestantes x Coronavírus
+                </span>
               </v-col>
 
               <v-btn
