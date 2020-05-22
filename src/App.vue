@@ -1,7 +1,8 @@
 <template>
   <v-app>
-<!--    <AppBar/>-->
+    <!--    <AppBar/>-->
     <v-content>
+      <TypeUserForm v-if="typeUserDialog"/>
       <HeroImage/>
       <CovidDefinition/>
       <PregnancyRisks/>
@@ -20,6 +21,7 @@
   import Prevention from './components/Prevention'
   import AboutUs from './components/AboutUs'
   import AppBar from './components/AppBar'
+  import TypeUserForm from './components/TypeUserForm'
 
   export default {
     name: 'App',
@@ -31,11 +33,15 @@
       PregnancyRisks,
       Prevention,
       AboutUs,
-      AppBar
+      AppBar,
+      TypeUserForm
     },
-
     data: () => ({
-      //
-    })
+      typeUserDialog: true,
+      utilDialog: false
+    }),
+    mounted () {
+
+    }
   }
 </script>
