@@ -2,12 +2,11 @@
   <v-row justify="center">
     <v-dialog v-model="dialog" persistent max-width="290">
       <v-card v-if="!loading">
-        <v-card-title class="headline">Você é:</v-card-title>
+        <v-card-title class="headline">Essas informações foram úteis para você ?</v-card-title>
         <v-card-text>
           <v-radio-group v-model="radio" column>
-            <v-radio label="Gestante" value="gestante" @click="send('gestante')"></v-radio>
-            <v-radio label="Profissional da saúde ou estudante" value="saude" @click="send('saude')"></v-radio>
-            <v-radio label="Outro" value="outro" @click="send('outro')"></v-radio>
+            <v-radio label="Sim" value="sim" @click="send('sim')"></v-radio>
+            <v-radio label="Não" value="nao" @click="send('nao')"></v-radio>
           </v-radio-group>
         </v-card-text>
       </v-card>
@@ -31,22 +30,22 @@
   import db from '@/firebase'
 
   export default {
-    name: 'TypeUserForm',
+    name: 'UsefulForm',
     data: () => ({
       dialog: true,
       radio: null,
       loading: false
     }),
     methods: {
-      send (typeUser) {
-        this.radio = typeUser
+      send (useful) {
+        this.radio = useful
         this.loading = true
-        const user = {
-          typeUser: typeUser
+        const usefulObj = {
+          useful: useful
         }
-        db.collection('typeUser').add(user).then(() => {
+        db.collection('useful').add(usefulObj).then(() => {
           this.dialog = false
-          localStorage.setItem('typeUser', typeUser)
+          localStorage.setItem('useful', useful)
         })
       }
     }
