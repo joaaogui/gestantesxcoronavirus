@@ -1,12 +1,10 @@
 <template>
   <section
     id="features"
-    class="grey lighten-3"
+    class="grey lighten-3 pt-6"
   >
-    <div class="py-12"></div>
-
     <v-container class="text-center">
-      <h2 class="display-2 font-weight-bold mb-3">Porque o COVID-19 é um risco para as gestantes ?</h2>
+      <h2 class="display-2 font-weight-light mb-3 text--secondary">Porque o COVID-19 é um risco para as gestantes ?</h2>
 
       <v-responsive
         class="mx-auto mb-12"
@@ -19,10 +17,8 @@
 
       <v-row>
         <v-col
-          v-for="({ icon, title, text }, i) in features"
-          :key="i"
           cols="12"
-          md="4"
+          md="6"
         >
           <v-card
             class="py-12 px-4"
@@ -37,28 +33,37 @@
                 >
                   <v-icon
                     large
-                    v-text="icon"
-                  ></v-icon>
+                  >mdi-check</v-icon>
                 </v-avatar>
               </div>
             </v-theme-provider>
 
             <v-card-title
               class="justify-center font-weight-black text-uppercase"
-              v-text="title"
-            ></v-card-title>
+            >Adelphiss tolerare!
+            </v-card-title>
 
             <v-card-text
               class="subtitle-1"
-              v-text="text"
             >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum
+              excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores
+              nam
             </v-card-text>
           </v-card>
+        </v-col>
+        <v-col cols="12"
+               md="6">
+          <iframe width="560" height="400"
+                  src="https://www.youtube.com/embed/RH_V2rtFqYM?autoplay=1&controls=1&fs=0&loop=1&playlist=RH_V2rtFqYM&modestbranding=1"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"/>
         </v-col>
       </v-row>
     </v-container>
 
-    <div class="py-12"></div>
+    <div class=" py-12
+          "></div>
   </section>
 </template>
 
@@ -66,23 +71,6 @@
   export default {
     name: 'PregnancyRisks',
     data: () => ({
-      features: [
-        {
-          icon: 'mdi-account-group-outline',
-          title: 'Adelphiss tolerare! ',
-          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
-        },
-        {
-          icon: 'mdi-update',
-          title: 'Monss favere',
-          text: 'Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit.',
-        },
-        {
-          icon: 'mdi-shield-outline',
-          title: 'Historias accelerare',
-          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
-        },
-      ],
     })
   }
 </script>

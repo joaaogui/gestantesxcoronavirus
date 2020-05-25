@@ -21,7 +21,6 @@
   import Transmission from './components/Transmission'
   import Prevention from './components/Prevention'
   import AboutUs from './components/AboutUs'
-  import AppBar from './components/AppBar'
   import TypeUserForm from './components/TypeUserForm'
   import UsefulForm from '@/components/UsefulForm'
 
@@ -35,9 +34,8 @@
       PregnancyRisks,
       Prevention,
       AboutUs,
-      AppBar,
       TypeUserForm,
-      UsefulForm
+      UsefulForm,
     },
     data: () => ({
       typeUserDialog: true,
@@ -55,7 +53,6 @@
     methods: {
       visibilityChanged (isVisible, entry) {
         this.isVisible = isVisible
-        console.log(entry.isIntersecting)
         if (entry.isIntersecting) {
           this.usefulDialog = true
         }
