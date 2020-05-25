@@ -55,7 +55,7 @@
         <v-col cols="12"
                md="6">
           <iframe width="560" height="400"
-                  src="https://www.youtube.com/embed/RH_V2rtFqYM?autoplay=1&controls=1&fs=0&loop=1&playlist=RH_V2rtFqYM&modestbranding=1"
+                  src="https://www.youtube.com/embed/RH_V2rtFqYM?autoplay=1&controls=1&fs=0&loop=1&playlist=RH_V2rtFqYM&modestbranding=1&origin=http://localhost:8080/#/"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"/>
         </v-col>
