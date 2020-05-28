@@ -33,7 +33,8 @@
                 >
                   <v-icon
                     large
-                  >mdi-check</v-icon>
+                  >mdi-check
+                  </v-icon>
                 </v-avatar>
               </div>
             </v-theme-provider>
@@ -46,9 +47,19 @@
             <v-card-text
               class="subtitle-1"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum
-              excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores
-              nam
+              Há dados limitados sobre a doença de corona vírus 2019 durante a gravidez; no entanto, informações sobre
+              doenças associadas a outros corona vírus altamente patogênicos (ou seja, síndrome respiratória aguda grave
+              e síndrome respiratória do Oriente Médio) podem fornecer informações sobre os efeitos da doença de corona
+              vírus 2019 durante a gravidez.¹
+              As gestantes estão incluídas no grupo de risco, não por serem mais propensas á doença, mas sim, devido às
+              mudanças no corpo e sistema imunológico. Desse modo, a gestação modifica o organismo materno alterando a
+              bioquímica e a anatomia de todos os seus aparelhos e sistemas, podendo agravar entidades mórbidas
+              preexistentes ou produzir sintomas que , embora fisiológicos, são por vezes molestos.
+              Tais alterações são resultado da resposta do organismo materno ao feto e se iniciam desde a fertilização.
+              Dessa forma, as adaptações anatômicas, fisiológicas e bioquímicas na gravidez são profundas e decorrem,
+              principalmente de fatores hormonais e mecânicos, o que pode agravar severamente algumas infecções
+              respiratórias contraídas. É importante, por isso, que as gestantes tomem precauções para se protegerem
+              contra o COVID-19.
             </v-card-text>
           </v-card>
         </v-col>
@@ -70,8 +81,7 @@
 <script>
   export default {
     name: 'PregnancyRisks',
-    data: () => ({
-    })
+    data: () => ({})
   }
 </script>
 

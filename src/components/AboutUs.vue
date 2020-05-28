@@ -15,20 +15,11 @@
         class="mx-auto title font-weight-light mb-8"
         max-width="720"
       >
-        Torus ires, tanquam audax mens. Nunquam gratia accola. Cur vita tolerare? A falsis, castor regius calcaria. Sunt
-        buboes acquirere camerarius, fortis mortemes. Neuter magister velox demittos pulchritudine est. Sunt terrores
-        anhelare clemens, secundus seculaes. Secundus accolas ducunt ad caesium. Omnias sunt deuss de dexter capio.
-        Adiurators resistere! Est castus luna, cesaris. Cur orgia accelerare? Ubi est nobilis pars? Cur homo trabem?
-        Nobilis, fatalis capios velox aperto de azureus, bi-color exemplar.
+        Somos Acadêmicos do Curso de Medicina da Faculdade UniRV - Campus Formosa. Atualmente, estamos cursando o
+        segundo período. Diante da pandemia causada pelo COVID-19, decidimos contribuir com informações seguras sobre o
+        risco de se contrair Corona Vírus quando se está grávida. Esperamos, dessa forma, auxiliar a população e
+        esclarecer as dúvidas mais frequentes sobre o presente assunto.
       </v-responsive>
-
-      <v-avatar
-        class="elevation-12 mb-12 ml-12"
-        size="128"
-        v-for="index in 10" :key="index"
-      >
-        <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
-      </v-avatar>
     </v-container>
   </section>
 </template>
