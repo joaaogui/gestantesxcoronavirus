@@ -1,7 +1,7 @@
 <template>
   <section id="blog">
     <v-container>
-      <h2 class="display-3 font-weight-light text-uppercase text-center">Prevenção</h2>
+      <h2 class="display-2 font-weight-light text-center my-8">Prevenção</h2>
       <v-row>
         <v-col cols="12" md="6" class="title font-weight-light">
           As gestantes devem ter cuidado redobrado quando o assunto é o Coronavírus, uma vez que estão em constante

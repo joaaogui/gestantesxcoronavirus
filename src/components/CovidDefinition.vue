@@ -1,17 +1,17 @@
 <template>
   <section id="about-me">
-    <v-container>
-      <h2 class="text-center display-3 font-weight-light text--secondary">COVID-19 - O que é ?</h2>
-      <v-responsive class="mx-auto title text-center font-weight-light" max-width="720">
+    <v-container class="text-center">
+      <h2 class="text-center display-2 font-weight-light my-8">COVID-19 - O que é ?</h2>
+      <div class="title text-center font-weight-light">
         De acordo com o Ministério da Saúde(MS). A COVID-19 é uma doença causada pelo coronavírus SARS-CoV-2, que
         apresenta um quadro clínico que varia de infecções assintomáticas a quadros respiratórios graves. De acordo com
         a Organização Mundial de Saúde (OMS), a maioria dos pacientes com COVID-19 (cerca de 80%) podem ser
         assintomáticos e cerca de 20% dos casos podem requerer atendimento hospitalar por apresentarem dificuldade
         respiratória e desses casos aproximadamente 5% podem necessitar de suporte para o tratamento de insuficiência
         respiratória (suporte ventilatório).¹
-      </v-responsive>
+      </div>
 
-      <h2 class="display-1 font-weight-light text-center">Covid-19 na corrente sanguínea</h2>
+      <h2 class="display-1 font-weight-light text-center my-6">Covid-19 na corrente sanguínea</h2>
 
       <v-row class="title font-weight-light">
         <v-col cols="12" sm="6">

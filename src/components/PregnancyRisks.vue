@@ -1,18 +1,18 @@
 <template>
-  <section id="features" class="grey lighten-3 pt-6">
+  <section id="features" class="grey lighten-3">
     <v-container>
-      <h2 class="display-3 font-weight-light text-center text--secondary">
+      <h2 class="display-2 font-weight-light text-center my-8">
         Porque o COVID-19 é um risco para as gestantes ?
       </h2>
       <v-row>
         <v-col cols="12" md="4" lg="5" class="title font-weight-light">
-          <div>
+          <div class="mb-4">
             Há dados limitados sobre a doença de corona vírus 2019 durante a gravidez; no entanto, informações sobre
             doenças associadas a outros corona vírus altamente patogênicos (ou seja, síndrome respiratória aguda grave
             e síndrome respiratória do Oriente Médio) podem fornecer informações sobre os efeitos da doença de corona
             vírus 2019 durante a gravidez.¹
           </div>
-          <div>
+          <div class="mb-4">
             As gestantes estão incluídas no grupo de risco, não por serem mais propensas á doença, mas sim, devido às
             mudanças no corpo e sistema imunológico. Desse modo, a gestação modifica o organismo materno alterando a
             bioquímica e a anatomia de todos os seus aparelhos e sistemas, podendo agravar entidades mórbidas
@@ -38,8 +38,6 @@
         </v-col>
       </v-row>
     </v-container>
-
-    <div class="py-12"></div>
   </section>
 </template>
 

@@ -17,7 +17,10 @@
                 cols="12"
                 tag="h1"
               >
-                <span class="display-4 font-weight-thin">
+                <span
+                  :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']"
+                  class="font-weight-thin"
+                >
                   Gestantes x Coronavírus
                 </span>
               </v-col>
