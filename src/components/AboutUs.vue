@@ -7,7 +7,6 @@
         width="56"
       >
         <v-divider class="mb-1"></v-divider>
-
         <v-divider></v-divider>
       </v-responsive>
 

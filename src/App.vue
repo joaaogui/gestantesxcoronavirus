@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <!--    <AppBar/>-->
     <v-content>
       <TypeUserForm v-if="showTypeUserDialog"/>
@@ -35,23 +35,27 @@
       Prevention,
       AboutUs,
       TypeUserForm,
-      UsefulForm,
+      UsefulForm
     },
     data: () => ({
       typeUserDialog: true,
       usefulDialog: false,
       isVisible: null
     }),
+    mounted () {
+      console.log(this.$vuetify.breakpoint.name)
+      console.log(this.$vuetify.breakpoint)
+    },
     computed: {
-      showTypeUserDialog () {
+      showTypeUserDialog() {
         return this.typeUserDialog && !localStorage.getItem('typeUser')
       },
-      showUsefulDialog () {
+      showUsefulDialog() {
         return this.usefulDialog && !localStorage.getItem('useful')
       }
     },
     methods: {
-      visibilityChanged (isVisible, entry) {
+      visibilityChanged(isVisible, entry) {
         this.isVisible = isVisible
         if (entry.isIntersecting) {
           this.usefulDialog = true
@@ -60,3 +64,10 @@
     }
   }
 </script>
+
+<style lang="scss">
+  #app {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+</style>
