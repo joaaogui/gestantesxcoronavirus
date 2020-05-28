@@ -1,23 +1,23 @@
 <template>
   <v-row justify="center">
-    <v-dialog v-model="dialog" persistent max-width="290">
+    <v-dialog max-width="290" persistent v-model="dialog">
       <v-card v-if="!loading">
         <v-card-title class="headline">Você é:</v-card-title>
         <v-card-text>
-          <v-radio-group v-model="radio" column>
-            <v-radio label="Gestante" value="gestante" @click="send('gestante')"></v-radio>
-            <v-radio label="Profissional da saúde ou estudante" value="saude" @click="send('saude')"></v-radio>
-            <v-radio label="Outro" value="outro" @click="send('outro')"></v-radio>
+          <v-radio-group column v-model="radio">
+            <v-radio @click="send('gestante')" label="Gestante" value="gestante"></v-radio>
+            <v-radio @click="send('saude')" label="Profissional da saúde ou estudante" value="saude"></v-radio>
+            <v-radio @click="send('outro')" label="Outro" value="outro"></v-radio>
           </v-radio-group>
         </v-card-text>
       </v-card>
-      <v-card v-else class="text--disabled" height="223">
+      <v-card class="text--disabled" height="223" v-else>
         <v-container fill-height>
-          <v-row justify="center" align="center">
+          <v-row align="center" justify="center">
             <v-col class="text-center">
               <v-progress-circular
-                indeterminate
                 color="primary"
+                indeterminate
               ></v-progress-circular>
             </v-col>
           </v-row>
@@ -38,7 +38,7 @@
       loading: false
     }),
     methods: {
-      send (typeUser) {
+      send(typeUser) {
         this.radio = typeUser
         this.loading = true
         const user = {

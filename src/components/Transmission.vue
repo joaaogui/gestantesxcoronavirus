@@ -12,7 +12,7 @@
               transporte de pequenas gotículas de saliva, e normalmente elas não são capazes de ultrapassar a distância
               de 1 metro.
             </v-col>
-            <v-col cols="12" md="6" >
+            <v-col cols="12" md="6">
               A transmissão do novo coronavírus ocorre tanto pelo contato direto quanto indireto com o vírus, que é
               transportado por gotículas expelidas pela fala, tosse ou espirro de pessoas doentes, toque de aperto de
               mão, catarro, objetos ou superfícies contaminadas, como celulares, mesas, maçanetas, brinquedos, teclados
@@ -25,7 +25,8 @@
               inoxidável que pode durar de 2 a 3 dias, o papelão até um dia e o cobre cerca de 4 horas. Ademais, um
               fator que se demonstrou importante para a transmissão do vírus é a umidade, ela é responsável pela
               resistência que o vírus terá ao sair do organismo do infectado e é um fator determinante para a sua
-              sobrevivência temporária no meio. [1]
+              sobrevivência temporária no meio.
+              <Citation :number="10" :text='this.references[10]'/>
             </v-col>
           </v-row>
           <v-row>
@@ -35,7 +36,8 @@
                 Em gestantes hospitalizadas com infecção por COVID-19, não foram relatados casos de transmissão
                 vertical.
                 A infecção por COVID-19 foi associada a taxas relativamente mais altas de nascimento prematuro,
-                pré-eclâmpsia, parto cesáreo e morte perinatal. [2]
+                pré-eclâmpsia, parto cesáreo e morte perinatal.
+                <Citation :number="11" :text='this.references[11]'/>
               </div>
             </v-col>
           </v-row>
@@ -46,9 +48,19 @@
 </template>
 
 <script>
+  import Citation from "@/components/Citation"
+  import references from "@/utils"
+
   export default {
     name: 'Transmission',
-    data: () => ({})
+    components: {
+      Citation
+    },
+    computed: {
+      references() {
+        return references
+      }
+    }
   }
 </script>
 
@@ -57,9 +69,5 @@
   .v-parallax__image {
     transform: none !important;
     width: 100% !important;
-  }
-  .virus-image {
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
   }
 </style>

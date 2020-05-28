@@ -3,9 +3,9 @@ import App from './App.vue'
 import './registerServiceWorker'
 import vuetify from './plugins/vuetify'
 import VueAnalytics from 'vue-analytics'
-import VueObserveVisibility from 'vue-observe-visibility'
+import VueClipboard from 'vue-clipboard2'
 
-Vue.use(VueObserveVisibility)
+Vue.use(VueClipboard)
 
 Vue.config.productionTip = false
 

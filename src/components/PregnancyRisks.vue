@@ -1,16 +1,17 @@
 <template>
-  <section id="features" class="grey lighten-3">
+  <section class="grey lighten-3" id="features">
     <v-container>
       <h2 class="display-2 font-weight-light text-center my-8">
         Porque o COVID-19 é um risco para as gestantes ?
       </h2>
       <v-row>
-        <v-col cols="12" md="4" lg="5" class="title font-weight-light">
+        <v-col class="title font-weight-light" cols="12" lg="5" md="4">
           <div class="mb-4">
             Há dados limitados sobre a doença de corona vírus 2019 durante a gravidez; no entanto, informações sobre
             doenças associadas a outros corona vírus altamente patogênicos (ou seja, síndrome respiratória aguda grave
             e síndrome respiratória do Oriente Médio) podem fornecer informações sobre os efeitos da doença de corona
-            vírus 2019 durante a gravidez.¹
+            vírus 2019 durante a gravidez.
+            <Citation :number="9" :text='this.references[9]'/>
           </div>
           <div class="mb-4">
             As gestantes estão incluídas no grupo de risco, não por serem mais propensas á doença, mas sim, devido às
@@ -26,13 +27,13 @@
             contra o COVID-19.
           </div>
         </v-col>
-        <v-col cols="12" md="8" lg="7" align-self="center">
+        <v-col align-self="center" cols="12" lg="7" md="8">
           <v-responsive min-height="500">
             <div style="display: flex;  width: 100%; height: 100%; flex-direction: column; overflow: hidden">
               <iframe
-                src="https://www.youtube.com/embed/RH_V2rtFqYM?autoplay=1&controls=1&fs=0&loop=1&playlist=RH_V2rtFqYM&modestbranding=1&origin=http://localhost:8080/#/"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 class="iframe"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"/>
+                src="https://www.youtube.com/embed/RH_V2rtFqYM?autoplay=1&controls=1&fs=0&loop=1&playlist=RH_V2rtFqYM&modestbranding=1&origin=http://localhost:8080/#/"/>
             </div>
           </v-responsive>
         </v-col>
@@ -42,9 +43,19 @@
 </template>
 
 <script>
+  import Citation from "@/components/Citation"
+  import references from "@/utils"
+
   export default {
     name: 'PregnancyRisks',
-    data: () => ({})
+    components: {
+      Citation
+    },
+    computed: {
+      references() {
+        return references
+      }
+    }
   }
 </script>
 

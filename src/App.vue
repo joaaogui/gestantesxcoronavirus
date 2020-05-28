@@ -1,6 +1,5 @@
 <template>
   <v-app id="app">
-    <!--    <AppBar/>-->
     <v-content>
       <TypeUserForm v-if="showTypeUserDialog"/>
       <UsefulForm v-if="showUsefulDialog"/>
@@ -9,7 +8,7 @@
       <PregnancyRisks/>
       <Transmission/>
       <Prevention/>
-      <AboutUs v-observe-visibility="visibilityChanged"/>
+      <AboutUs v-intersect="onIntersect"/>
     </v-content>
   </v-app>
 </template>
@@ -40,12 +39,8 @@
     data: () => ({
       typeUserDialog: true,
       usefulDialog: false,
-      isVisible: null
+      isIntersecting: false
     }),
-    mounted () {
-      console.log(this.$vuetify.breakpoint.name)
-      console.log(this.$vuetify.breakpoint)
-    },
     computed: {
       showTypeUserDialog() {
         return this.typeUserDialog && !localStorage.getItem('typeUser')
@@ -55,11 +50,8 @@
       }
     },
     methods: {
-      visibilityChanged(isVisible, entry) {
-        this.isVisible = isVisible
-        if (entry.isIntersecting) {
-          this.usefulDialog = true
-        }
+      onIntersect(entries, observer) {
+        this.usefulDialog = entries[0].isIntersecting
       }
     }
   }

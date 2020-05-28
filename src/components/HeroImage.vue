@@ -26,10 +26,10 @@
               </v-col>
 
               <v-btn
+                @click="$vuetify.goTo('#about-me')"
                 class="align-self-end"
                 fab
                 outlined
-                @click="$vuetify.goTo('#about-me')"
               >
                 <v-icon>mdi-chevron-double-down</v-icon>
               </v-btn>

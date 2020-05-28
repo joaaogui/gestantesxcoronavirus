@@ -1,22 +1,22 @@
 <template>
   <v-row justify="center">
-    <v-dialog v-model="dialog" persistent max-width="290">
+    <v-dialog max-width="290" persistent v-model="dialog">
       <v-card v-if="!loading">
         <v-card-title class="headline">Essas informações foram úteis para você ?</v-card-title>
         <v-card-text>
-          <v-radio-group v-model="radio" column>
-            <v-radio label="Sim" value="sim" @click="send('sim')"></v-radio>
-            <v-radio label="Não" value="nao" @click="send('nao')"></v-radio>
+          <v-radio-group column v-model="radio">
+            <v-radio @click="send('sim')" label="Sim" value="sim"></v-radio>
+            <v-radio @click="send('nao')" label="Não" value="nao"></v-radio>
           </v-radio-group>
         </v-card-text>
       </v-card>
-      <v-card v-else class="text--disabled" height="223">
+      <v-card class="text--disabled" height="223" v-else>
         <v-container fill-height>
-          <v-row justify="center" align="center">
+          <v-row align="center" justify="center">
             <v-col class="text-center">
               <v-progress-circular
-                indeterminate
                 color="primary"
+                indeterminate
               ></v-progress-circular>
             </v-col>
           </v-row>
@@ -37,7 +37,7 @@
       loading: false
     }),
     methods: {
-      send (useful) {
+      send(useful) {
         this.radio = useful
         this.loading = true
         const usefulObj = {
