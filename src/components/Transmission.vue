@@ -2,12 +2,11 @@
   <section id="stats">
     <v-responsive>
       <v-parallax height="100%" src="../assets/virus.jpg">
-       <span :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']"
-             class="font-weight-thin text-center">
+       <span class=" display-3 font-weight-light text-center">
         Transmissão
       </span>
         <v-container fill-height>
-          <v-row class="mx-auto">
+          <v-row class="mx-auto title font-weight-light">
             <v-col cols="12">
               Para a transmissão do SARS-CoV é necessário algum vetor de transporte, correntes de ar servem como
               transporte de pequenas gotículas de saliva, e normalmente elas não são capazes de ultrapassar a distância
@@ -30,8 +29,8 @@
             </v-col>
           </v-row>
           <v-row>
-            <h2 class="font-weight-light text-center">Transmissão Vertical</h2>
             <v-col cols="12">
+              <h2 class="display-1 font-weight-light text-center">Transmissão Vertical</h2>
               <div class="title font-weight-light">
                 Em gestantes hospitalizadas com infecção por COVID-19, não foram relatados casos de transmissão
                 vertical.
@@ -54,6 +53,7 @@
 </script>
 
 <style scoped>
+  /*noinspection CssUnusedSymbol*/
   .v-parallax__image {
     transform: none !important;
     width: 100% !important;

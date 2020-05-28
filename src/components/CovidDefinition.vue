@@ -1,16 +1,8 @@
 <template>
   <section id="about-me">
-    <div class="py-12"></div>
     <v-container>
-      <h2 class="text-center display-2 font-weight-light mb-3 text--secondary">Covid-19 - 0 que é ?</h2>
-      <v-responsive
-        class="mx-auto mb-8"
-        width="56"
-      >
-        <v-divider class="mb-1"></v-divider>
-        <v-divider></v-divider>
-      </v-responsive>
-      <v-responsive class="mx-auto title text-center font-weight-light mb-8" max-width="720">
+      <h2 class="text-center display-3 font-weight-light text--secondary">COVID-19 - O que é ?</h2>
+      <v-responsive class="mx-auto title text-center font-weight-light" max-width="720">
         De acordo com o Ministério da Saúde(MS). A COVID-19 é uma doença causada pelo coronavírus SARS-CoV-2, que
         apresenta um quadro clínico que varia de infecções assintomáticas a quadros respiratórios graves. De acordo com
         a Organização Mundial de Saúde (OMS), a maioria dos pacientes com COVID-19 (cerca de 80%) podem ser
@@ -19,9 +11,9 @@
         respiratória (suporte ventilatório).¹
       </v-responsive>
 
-      <h2 class="display-1 font-weight-light mb-8  text-center text--secondary">Covid-19 na corrente sanguínea</h2>
+      <h2 class="display-1 font-weight-light text-center">Covid-19 na corrente sanguínea</h2>
 
-      <v-row>
+      <v-row class="title font-weight-light">
         <v-col cols="12" sm="6">
           Coronavírus (CoV) é um envelope, vírus do ácido ribonucleico (RNA) de cadeia positiva da família dos
           Coronaviridae e pertencente à ordem Nidovirales, ² geralmente causando infecções respiratórias e
@@ -45,7 +37,7 @@
         <v-col cols="12" sm="6">
           O termo coronavírus deriva da palavra latina corona, que significa coroa ou halo; essa designação decorre do
           aparecimento de virions de coronavírus visualizados por microscopia eletrônica, na qual as partículas virais
-          exibem uma franja semelhante a uma coroa, geralmente chamada de picos.(FOTO)8
+          exibem uma franja semelhante a uma coroa, geralmente chamada de picos. 8
         </v-col>
       </v-row>
     </v-container>

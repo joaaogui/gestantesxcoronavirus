@@ -22,7 +22,7 @@
   import Prevention from './components/Prevention'
   import AboutUs from './components/AboutUs'
   import TypeUserForm from './components/TypeUserForm'
-  import UsefulForm from '@/components/UsefulForm'
+  import UsefulForm from './components/UsefulForm'
 
   export default {
     name: 'App',
@@ -66,8 +66,8 @@
 </script>
 
 <style lang="scss">
-  #app {
-    text-align: justify;
-    text-justify: inter-word;
-  }
+  /*#app {*/
+  /*  text-align: justify;*/
+  /*  text-justify: inter-word;*/
+  /*}*/
 </style>

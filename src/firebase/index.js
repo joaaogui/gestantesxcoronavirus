@@ -1,7 +1,7 @@
 import * as firebase from 'firebase/app'
 import 'firebase/firestore'
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: 'AIzaSyDS8wHGKx27QEaIAvtlcFV_csHFoOd9tj4',
   authDomain: 'gestantesxcoronavirus.firebaseapp.com',
   databaseURL: 'https://gestantesxcoronavirus.firebaseio.com',

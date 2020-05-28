@@ -2,7 +2,7 @@
   <section id="hero">
     <v-row no-gutters>
       <v-img
-        max-height="800"
+        max-height="1100"
         src="../assets/heroimage.jpg"
       >
         <v-theme-provider dark>
@@ -17,10 +17,7 @@
                 cols="12"
                 tag="h1"
               >
-                <span
-                  :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']"
-                  class="font-weight-thin"
-                >
+                <span class="display-4 font-weight-thin">
                   Gestantes x Coronavírus
                 </span>
               </v-col>

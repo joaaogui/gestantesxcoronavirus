@@ -1,17 +1,16 @@
 <template>
   <section id="blog">
     <v-container>
-      <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Prevenção</h2>
-
+      <h2 class="display-3 font-weight-light text-uppercase text-center">Prevenção</h2>
       <v-row>
-        <v-col cols="12" md="6" class="title font-weight-light mb-5">
+        <v-col cols="12" md="6" class="title font-weight-light">
           As gestantes devem ter cuidado redobrado quando o assunto é o Coronavírus, uma vez que estão em constante
           mudança fisiológica e hormonal durante a gestação. É importante ressaltar que durante a gestação as mulheres
           grávidas possuem um maior contato com ambientes hospitalares e de saúde, bem como com profissionais da área,
           e por esse e outros motivos o método de prevenção utilizado é dividido em prevenção de infecção em mulheres
           grávidas e prevenção de infecção para profissionais que estão em contato com a gestante.
         </v-col>
-        <v-col cols="12" md="6" class="title font-weight-light mb-5">
+        <v-col cols="12" md="6" class="title font-weight-light">
           Desse modo, as grávidas devem manter uma distância segura entre elas e o profissional de saúde, cerca de
           1 a 2 metros de distância. Além disso, deve ocorrer o controle telemático da gravidez, sempre que possível,
           adiar as consultas que não são essenciais e manter uma boa higienização pessoal. Seguindo esse raciocínio,
@@ -23,8 +22,6 @@
         </v-col>
       </v-row>
     </v-container>
-
-    <div class="py-12"></div>
   </section>
 </template>
 
