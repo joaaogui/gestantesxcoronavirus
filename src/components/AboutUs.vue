@@ -11,7 +11,7 @@
     </v-container>
     <div class="text-center mt-8">
       <v-avatar
-        class="text-center elevation-12 mb-12 ml-12"
+        class="text-center elevation-12 ma-3"
         size="128"
         v-for="(pic, index) in pictures" :key="index"
       >
