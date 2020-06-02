@@ -49,6 +49,9 @@
         return this.usefulDialog && !localStorage.getItem('useful')
       }
     },
+    mounted () {
+      console.log(this.$vuetify.breakpoint.name)
+    },
     methods: {
       onIntersect(entries, observer) {
         this.usefulDialog = entries[0].isIntersecting
