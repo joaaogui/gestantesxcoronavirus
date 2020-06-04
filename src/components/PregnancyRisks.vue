@@ -2,7 +2,7 @@
   <section class="grey lighten-3" id="features">
     <v-container>
       <h2 class="display-2 font-weight-light text-center my-8">
-        Porque o COVID-19 é um risco para as gestantes ?
+        Por que o COVID-19 é um risco para as gestantes ?
       </h2>
       <v-row class="title font-weight-light">
         <v-col cols=12 sm="6">
@@ -31,7 +31,7 @@
               <iframe
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 class="iframe"
-                src="https://www.youtube.com/embed/R7vGSIzueOQ?autoplay=1&controls=1&fs=0&loop=1&playlist=RH_V2rtFqYM&modestbranding=1&origin=http://localhost:8080/#/"/>
+                src="https://www.youtube.com/embed/R7vGSIzueOQ?autoplay=0&controls=1&fs=0&loop=1&playlist=RH_V2rtFqYM&modestbranding=1&origin=http://localhost:8080/#/"/>
             </div>
           </v-responsive>
         </v-col>

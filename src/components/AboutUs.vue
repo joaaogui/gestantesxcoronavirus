@@ -32,7 +32,8 @@
         '../assets/pictures/pic_4.jpeg',
         '../assets/pictures/pic_5.jpeg',
         '../assets/pictures/pic_6.jpeg',
-        '../assets/pictures/pic_7.jpeg'
+        '../assets/pictures/pic_7.jpeg',
+        '../assets/pictures/pic_8.jpeg'
       ]
     })
   }

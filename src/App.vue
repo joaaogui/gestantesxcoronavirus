@@ -1,15 +1,6 @@
 <template>
   <v-app id="app">
-    <v-content>
-      <TypeUserForm v-if="showTypeUserDialog"/>
-      <UsefulForm v-if="showUsefulDialog"/>
-      <HeroImage/>
-      <CovidDefinition/>
-      <PregnancyRisks/>
-      <Transmission/>
-      <Prevention/>
-      <AboutUs v-intersect="onIntersect"/>
-    </v-content>
+    <router-view/>
   </v-app>
 </template>
 
@@ -25,44 +16,11 @@
 
   export default {
     name: 'App',
-
-    components: {
-      Transmission,
-      HeroImage,
-      CovidDefinition,
-      PregnancyRisks,
-      Prevention,
-      AboutUs,
-      TypeUserForm,
-      UsefulForm
-    },
-    data: () => ({
-      typeUserDialog: true,
-      usefulDialog: false,
-      isIntersecting: false
-    }),
-    computed: {
-      showTypeUserDialog() {
-        return this.typeUserDialog && !localStorage.getItem('typeUser')
-      },
-      showUsefulDialog() {
-        return this.usefulDialog && !localStorage.getItem('useful')
-      }
-    },
     mounted () {
       console.log(this.$vuetify.breakpoint.name)
-    },
-    methods: {
-      onIntersect(entries, observer) {
-        this.usefulDialog = entries[0].isIntersecting
-      }
     }
   }
 </script>
 
 <style lang="scss">
-  /*#app {*/
-  /*  text-align: justify;*/
-  /*  text-justify: inter-word;*/
-  /*}*/
 </style>

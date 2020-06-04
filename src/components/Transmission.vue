@@ -48,8 +48,8 @@
 </template>
 
 <script>
-  import Citation from "@/components/Citation"
-  import references from "@/utils"
+  import Citation from '@/components/Citation'
+  import references from '@/utils'
 
   export default {
     name: 'Transmission',

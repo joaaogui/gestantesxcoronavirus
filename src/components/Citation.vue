@@ -23,7 +23,7 @@
 
 <script>
   export default {
-    name: "Citation",
+    name: 'Citation',
     props: {
       number: Number,
       text: String
